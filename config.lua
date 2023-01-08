@@ -47,7 +47,7 @@ Config.RestrictedChannels = {
         tow =true
     },
     [14] = {
-        tlrp = true -- TLRP Official Developers
+        dev = true 
     },
     [15] = {
         tunershop =true
