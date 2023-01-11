@@ -224,7 +224,7 @@ RegisterNUICallback("volumeDown", function(_, cb)
     cb('ok')
 end)
 
-RegisterNUICallback("increaseradiochannel", function(data, cb)
+RegisterNUICallback("increaseradiochannel", function(_, cb)
     --local newChannel = RadioChannel + 1
     local newChannel = tonumber(data.channel) + 1
     TriggerServerEvent("qb-log:server:CreateLog", "radio", "Radio Changed + ", "yellow", ""..GetPlayerName(GetPlayerFromServerId(GetPlayerServerId(PlayerId()))).. " Has Changed The Radio from "..RadioChannel.." to " .. newChannel)
@@ -232,7 +232,7 @@ RegisterNUICallback("increaseradiochannel", function(data, cb)
     cb("ok")
 end)
 
-RegisterNUICallback("decreaseradiochannel", function(data, cb)
+RegisterNUICallback("decreaseradiochannel", function(_, cb)
     if not onRadio then return end
     -- local newChannel = RadioChannel - 1
     local newChannel = tonumber(data.channel) - 1
@@ -272,7 +272,7 @@ RegisterNetEvent('qb-radio:client:leaveradio', function()
     leaveradio()
 end)
 
-RegisterNetEvent('qb-radio:client:volupradio', function(val)
+RegisterNetEvent('qb-radio:client:volumeupradio', function(val)
     local newvalue = tonumber(val)
     if newvalue <= 100  and newvalue >= 0 then
         RadioVolume = newvalue
