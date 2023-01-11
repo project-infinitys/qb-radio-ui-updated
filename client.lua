@@ -227,7 +227,7 @@ end)
 RegisterNUICallback("increaseradiochannel", function(data, cb)
     --local newChannel = RadioChannel + 1
     local newChannel = tonumber(data.channel) + 1
-    TriggerServerEvent("qb-log:server:CreateLog", "radio", "Radio Chnaged + ", "yellow", ""..GetPlayerName(GetPlayerFromServerId(GetPlayerServerId(PlayerId()))).. " Has Changed The Radio from "..RadioChannel.." to " .. newChannel)
+    TriggerServerEvent("qb-log:server:CreateLog", "radio", "Radio Changed + ", "yellow", ""..GetPlayerName(GetPlayerFromServerId(GetPlayerServerId(PlayerId()))).. " Has Changed The Radio from "..RadioChannel.." to " .. newChannel)
     connecttoradio(newChannel)
     cb("ok")
 end)
@@ -237,7 +237,7 @@ RegisterNUICallback("decreaseradiochannel", function(data, cb)
     -- local newChannel = RadioChannel - 1
     local newChannel = tonumber(data.channel) - 1
     if newChannel >= 1 then
-        TriggerServerEvent("qb-log:server:CreateLog", "radio", "Radio Chnaged - ", "yellow", ""..GetPlayerName(GetPlayerFromServerId(GetPlayerServerId(PlayerId()))).. " Has Changed The Radio from "..RadioChannel.." to " .. newChannel)
+        TriggerServerEvent("qb-log:server:CreateLog", "radio", "Radio Changed - ", "yellow", ""..GetPlayerName(GetPlayerFromServerId(GetPlayerServerId(PlayerId()))).. " Has Changed The Radio from "..RadioChannel.." to " .. newChannel)
         connecttoradio(newChannel)
         cb("ok")
     end
