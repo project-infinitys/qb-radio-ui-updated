@@ -268,11 +268,11 @@ CreateThread(function()
 end)
 
 -- Leave Radio
-RegisterNetEvent('qb-radio:client:leaveradio', function()
+RegisterNetEvent('qb-radio:client:leaveRadio', function()
     leaveradio()
 end)
 
-RegisterNetEvent('qb-radio:client:volumeupradio', function(val)
+RegisterNetEvent('qb-radio:client:volumeUpradio', function(val)
     local newvalue = tonumber(val)
     if newvalue <= 100  and newvalue >= 0 then
         RadioVolume = newvalue
