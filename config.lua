@@ -45,42 +45,6 @@ Config.RestrictedChannels = {
     },
     [13] = {
         tow =true
-    },
-    [14] = {
-        dev = true 
-    },
-    [15] = {
-        tunershop =true
-    },
-    [16] = {
-        burgershot =true
-    },
-    [17] = {
-        tequilala =true
-    },
-    [18] = {
-        bahamas =true
-    },
-    [19] = {
-        government =true
-    },
-    [20] = {
-        auction =true
-    },
-    [21] = {
-        uwucafe = true
-    },
-    [22] = {
-        cardealer =true
-    },
-    [23] = {
-        luxuryauto =true
-    },
-    [24] = {
-        gunshop =true
-    },
-    [25] = {
-        bandhilki =true
     }
 }
 
