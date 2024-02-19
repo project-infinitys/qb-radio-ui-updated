@@ -1,5 +1,5 @@
 # qb-radio-ui-updated
-Join discord for support :- https://discord.gg/projectinfinity
+Join discord for support :- https://discord.gg/Wc2feS5dXh
 
 
 
